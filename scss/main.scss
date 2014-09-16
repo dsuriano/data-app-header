@@ -1,0 +1,87 @@
+// Helpers
+@import "compass/css3";
+@import "normalize";
+
+// Stripped down styles from the tutorial at http://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations (using the "Slide Along" animation)
+@import "codrops";
+
+// Custom styles
+.newsapp-header-wrap {
+    background: url("../img/bg-header-markerStroke@2x.png") repeat-x center bottom;
+    background-size: 2000px 6px;
+    padding-bottom: 6px;
+}
+.newsapp-header {
+    position: relative;
+    background-color: black;
+    padding: 6px 6px 0;
+    height: 45px;
+    overflow: hidden;
+    .logo {
+        margin: 0 15px 0 5px;
+        float: left;
+    }
+    h1 {
+        float: left;
+        font-size: 18px;
+        line-height: 28px;
+        font-family: "ff-meta-serif-web-pro";
+        color: white;
+        margin: 5px 0 0 0;
+        padding: 0;
+        display: block;
+        white-space: nowrap;
+        &.is-hidden {
+            visibility: hidden;
+        }
+    }
+    .controls {
+        list-style: none;
+        margin: 13px 0 0 0;
+        padding: 0 0 0 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 30px;
+        background-color: #000;
+        li {
+            display: inline-block;
+            padding-right: 15px;
+            &:first-child {
+                border-right: 1px solid #666;
+                margin-right: 15px;
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: "proxima-nova-condensed";
+            &:hover {
+                text-decoration: underline;
+            }
+            &.share:before {
+                content: "";
+                display: inline-block;
+                background: url("../img/icon-share@2x.png") no-repeat center center;
+                background-size: 15px 12px;
+                width: 15px;
+                height: 12px;
+                margin-right: 10px;
+                margin-bottom: -2px;
+            }
+            &.menu:before {
+                content: "";
+                display: inline-block;
+                background: url("../img/icon-menu@2x.png") no-repeat center bottom;
+                background-size: 24px 15px;
+                width: 24px;
+                height: 15px;
+                margin-right: 10px;
+                margin-bottom: -3px;
+            }
+        }
+    }
+}
