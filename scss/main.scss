@@ -17,7 +17,7 @@
     padding: 6px 6px 0;
     height: 45px;
     overflow: hidden;
-    .logo {
+    .nah-logo {
         margin: 0 15px 0 5px;
         float: left;
     }
@@ -35,7 +35,7 @@
             visibility: hidden;
         }
     }
-    .controls {
+    .nah-controls {
         list-style: none;
         margin: 13px 0 0 0;
         padding: 0 0 0 15px;
@@ -62,7 +62,7 @@
             &:hover {
                 text-decoration: underline;
             }
-            &.share:before {
+            &.nah-share:before {
                 content: "";
                 display: inline-block;
                 background: url("../img/icon-share@2x.png") no-repeat center center;
@@ -72,7 +72,7 @@
                 margin-right: 10px;
                 margin-bottom: -2px;
             }
-            &.menu:before {
+            &.nah-menu:before {
                 content: "";
                 display: inline-block;
                 background: url("../img/icon-menu@2x.png") no-repeat center bottom;

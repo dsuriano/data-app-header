@@ -166,7 +166,7 @@ $(window).resize(function (e) {
 });
 
 $(document).ready(function(e) {
-    $(".st-menu .close-btn").click(function(e) {
+    $(".st-menu .nah-close-btn").click(function(e) {
         e.preventDefault();
         $(".st-container").removeClass("st-menu-open");
     });
