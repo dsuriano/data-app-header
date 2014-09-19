@@ -157,10 +157,10 @@ Custom code for the data app header bar
 
 $(window).resize(function (e) { 
     // Check to see if the app title needs to be hidden or not
-    if ($(".newsapp-header h1").width() > ($(".newsapp-header").width() - 280)) {
+    if ($(".newsapp-header h1").width() > ($(".newsapp-header").width() - 330)) {
         $(".newsapp-header h1").addClass("is-hidden");
     }
-    if ($(".newsapp-header h1").width() < ($(".newsapp-header").width() - 280)) {
+    if ($(".newsapp-header h1").width() < ($(".newsapp-header").width() - 330)) {
         $(".newsapp-header h1").removeClass("is-hidden");
     }
 });
@@ -169,5 +169,11 @@ $(document).ready(function(e) {
     $(".st-menu .nah-close-btn").click(function(e) {
         e.preventDefault();
         $(".st-container").removeClass("st-menu-open");
+    });
+    $(".nah-menu").click(function(e) {
+        e.preventDefault();
+        if ($(".st-container").hasClass("st-menu-open")) {
+            $(".st-container").removeClass("st-menu-open");
+        }
     });
 });
